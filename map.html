@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+        
+    </style>
+  </head>
+  <body>
+  <div id="map"></div>
+    <script type="text/javascript" src="csvjson.json"></script>
+    <script>
+      // ตัวแปร map ไว้เก็บแผนที่
+      var map;
+
+      // ตัวแป items ไว้เก็บค่าจากไฟล์ JSON
+      var items;
+      
+      // เรียกใช้ function ชื่อ init
+      init();
+
+      // function สำหรับสร้าง Map
+      function initMap() {
+      //เส้นทาง
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var directionsService = new google.maps.DirectionsService;
+        // สร้าง Map ตาม Option ที่ตั้งไว้ แล้วเก็บไว้ในตัวแปร map
+        map = new google.maps.Map(document.getElementById('map'),{
+          center: { lat: 38.716894, lng: -9.145751},
+          zoom: 14,
+          mapTypeId: 'terrain'
+          });
+       
+        //สร้าง Marker (position-> ตำแหน่ง, label -> ชื่อตำแหน่ง)
+        var markers = locations.map(function(location,i){
+            return new google.maps.Marker({
+            position: location,
+            label: labels[i],
+            animation: google.maps.Animation.DROP
+             })
+          });
+        
+        
+        //เอามาจาก google เป็นรูปแบบมหมุดที่ปัก
+       var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      
+        
+        
+        directionsDisplay.setMap(map);
+       
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        //document.getElementById('mode').addEventListener('change', function() {
+        //calculateAndDisplayRoute(directionsService, directionsDisplay);
+        //});
+
+      }
+      
+      // function โหลดไฟล์ JSON
+      function loadJSON(callback) {   
+
+        var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("application/json");
+        xobj.open('GET', 'csvjson.json', true); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+              if (xobj.readyState == 4 && xobj.status == "200") {
+                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                callback(xobj.responseText);
+              }
+        };
+        xobj.send(null);  
+     }
+
+     function init() {
+      //โหลดไฟล์ JSON โดยใช้ function ชื่อ loadJSON
+       loadJSON(function(response) {
+        // Parse JSON string into object
+          var actual_JSON = JSON.parse(response);
+
+          // เก็บข้อมูลจากไฟล์ JSON ไปไว้ในตัวแปร items
+          items = actual_JSON;
+
+          //เรียกใช้ function ชื่อ getLocation
+          getLocation();
+          
+          calculateAndDisplayRoute();
+       });
+       
+      }
+
+      //สร้างตัวแปรไว้เก็บค่า labels
+      var labels = [];
+    
+      function getLocation(){
+        //วนข้อมูลในไฟล์ JSON ที่เก็บอยู่ในตัวแปร items
+        items.forEach(item=>{
+          //ทดสอบให้โชวค่าไใน JSON ออกมาใน Console
+          console.log(item.latitude,item.longitude,item.cell_id_unique);
+        
+           var loc = { "lat" : item.latitude ,"lng" : item.longitude };
+           locations.push(loc);
+        
+          
+           var lab =item.cell_id_unique;
+           var labelch =lab.toString();
+           labels.push(labelch);
+            
+
+         });
+        
+      }
+        //ส้รางตัวแปรไว้เก็บค่า location
+        var locations = [];
+
+        function  calculateAndDisplayRoute (directionsService, directionsDisplay) {
+         //waypoins กำหนดจุดที่ผ่าน
+         var first = new google.maps.LatLng(38.7335798,-9.1499846);//1911
+         var second = new google.maps.LatLng(38.7324734,-9.1484176);//32911
+         var Third = new google.maps.LatLng(38.7326571,-9.1456222);//10661
+         
+         //var selectedMode = document.getElementById('mode').value;
+             directionsService.route({
+             origin: {lat:38.734668 , lng:-9.1517128},  //จุดเริ่ม บ้าน เสา 30011
+             destination: {lat: 38.7312911, lng:-9.1425821}, //จุดจบที่ทำงาน ห้าง เสา5811
+             waypoints: [{location: first},{location: second},{location:Third}],//{location: second}
+             travelMode: 'DRIVING',
+             optimizeWaypoints: true
+            }, 
+            function(response, status) {
+            if (status == 'OK') {
+            directionsDisplay.setDirections(response);
+            } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+            
+          });
+        
+       }
+
+      
+      
+
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZxxToqlFnyLGibb3iuyyu20zbjm4dhpc&callback=initMap"
+    async defer></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  
+  </body>
+</html>
