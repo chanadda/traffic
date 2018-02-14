@@ -1,0 +1,858 @@
+[
+  {
+    "Frequency": 2496,
+    "user": 17040957,
+    "cell_id": 1121,
+    "sign": "w",
+    "latitude": 38.76911,
+    "longitude": -9.1779044
+  },
+  {
+    "Frequency": 256,
+    "user": 17040957,
+    "cell_id": 8421,
+    "sign": "h",
+    "latitude": 38.7696936,
+    "longitude": -9.2306847
+  },
+  {
+    "Frequency": 222,
+    "user": 17040957,
+    "cell_id": 8421,
+    "sign": "w",
+    "latitude": 38.7696936,
+    "longitude": -9.2306847
+  },
+  {
+    "Frequency": 125,
+    "user": 17040957,
+    "cell_id": 1121,
+    "sign": "h",
+    "latitude": 38.76911,
+    "longitude": -9.1779044
+  },
+  {
+    "Frequency": 93,
+    "user": 17040957,
+    "cell_id": 5811,
+    "sign": "w",
+    "latitude": 38.7312911,
+    "longitude": -9.1425821
+  },
+  {
+    "Frequency": 45,
+    "user": 17040957,
+    "cell_id": 6921,
+    "sign": "w",
+    "latitude": 38.7175528,
+    "longitude": -9.234658
+  },
+  {
+    "Frequency": 43,
+    "user": 17040957,
+    "cell_id": 2721,
+    "sign": "w",
+    "latitude": 38.7746811,
+    "longitude": -9.1882215
+  },
+  {
+    "Frequency": 37,
+    "user": 17040957,
+    "cell_id": 19721,
+    "sign": "w",
+    "latitude": 38.7811696,
+    "longitude": -9.2331624
+  },
+  {
+    "Frequency": 36,
+    "user": 17040957,
+    "cell_id": 2221,
+    "sign": "w",
+    "latitude": 38.7243408,
+    "longitude": -9.2196331
+  },
+  {
+    "Frequency": 30,
+    "user": 17040957,
+    "cell_id": 1321,
+    "sign": "w",
+    "latitude": 38.7669931,
+    "longitude": -9.2048919
+  },
+  {
+    "Frequency": 29,
+    "user": 17040957,
+    "cell_id": 19721,
+    "sign": "h",
+    "latitude": 38.7811696,
+    "longitude": -9.2331624
+  },
+  {
+    "Frequency": 28,
+    "user": 17040957,
+    "cell_id": 2421,
+    "sign": "w",
+    "latitude": 38.7428858,
+    "longitude": -9.2296204
+  },
+  {
+    "Frequency": 26,
+    "user": 17040957,
+    "cell_id": 14521,
+    "sign": "w",
+    "latitude": 38.7842405,
+    "longitude": -9.2154416
+  },
+  {
+    "Frequency": 26,
+    "user": 17040957,
+    "cell_id": 311,
+    "sign": "w",
+    "latitude": 38.6968369,
+    "longitude": -9.2147077
+  },
+  {
+    "Frequency": 24,
+    "user": 17040957,
+    "cell_id": 4011,
+    "sign": "w",
+    "latitude": 38.7622458,
+    "longitude": -9.1760457
+  },
+  {
+    "Frequency": 23,
+    "user": 17040957,
+    "cell_id": 31611,
+    "sign": "h",
+    "latitude": 38.756406,
+    "longitude": -9.1870567
+  },
+  {
+    "Frequency": 21,
+    "user": 17040957,
+    "cell_id": 3421,
+    "sign": "w",
+    "latitude": 38.7813043,
+    "longitude": -9.120139
+  },
+  {
+    "Frequency": 19,
+    "user": 17040957,
+    "cell_id": 7141,
+    "sign": "w",
+    "latitude": 38.7945269,
+    "longitude": -9.3452256
+  },
+  {
+    "Frequency": 18,
+    "user": 17040957,
+    "cell_id": 2711,
+    "sign": "w",
+    "latitude": 38.7502673,
+    "longitude": -9.1292359
+  },
+  {
+    "Frequency": 18,
+    "user": 17040957,
+    "cell_id": 14621,
+    "sign": "w",
+    "latitude": 38.8014042,
+    "longitude": -9.2268368
+  },
+  {
+    "Frequency": 17,
+    "user": 17040957,
+    "cell_id": 11041,
+    "sign": "h",
+    "latitude": 38.770914,
+    "longitude": -9.266961
+  },
+  {
+    "Frequency": 17,
+    "user": 17040957,
+    "cell_id": 521,
+    "sign": "w",
+    "latitude": 38.7647694,
+    "longitude": -9.1186725
+  },
+  {
+    "Frequency": 17,
+    "user": 17040957,
+    "cell_id": 9111,
+    "sign": "w",
+    "latitude": 38.722196,
+    "longitude": -9.1582894
+  },
+  {
+    "Frequency": 17,
+    "user": 17040957,
+    "cell_id": 13621,
+    "sign": "w",
+    "latitude": 38.7650033,
+    "longitude": -9.0997957
+  },
+  {
+    "Frequency": 17,
+    "user": 17040957,
+    "cell_id": 2211,
+    "sign": "w",
+    "latitude": 38.7409429,
+    "longitude": -9.1495858
+  },
+  {
+    "Frequency": 16,
+    "user": 17040957,
+    "cell_id": 2621,
+    "sign": "h",
+    "latitude": 38.7601773,
+    "longitude": -9.2351428
+  },
+  {
+    "Frequency": 16,
+    "user": 17040957,
+    "cell_id": 4711,
+    "sign": "w",
+    "latitude": 38.7467623,
+    "longitude": -9.1646728
+  },
+  {
+    "Frequency": 14,
+    "user": 17040957,
+    "cell_id": 1321,
+    "sign": "h",
+    "latitude": 38.7669931,
+    "longitude": -9.2048919
+  },
+  {
+    "Frequency": 14,
+    "user": 17040957,
+    "cell_id": 15521,
+    "sign": "w",
+    "latitude": 38.741571,
+    "longitude": -9.2197549
+  },
+  {
+    "Frequency": 14,
+    "user": 17040957,
+    "cell_id": 28741,
+    "sign": "w",
+    "latitude": 38.8390254,
+    "longitude": -9.1758776
+  },
+  {
+    "Frequency": 14,
+    "user": 17040957,
+    "cell_id": 421,
+    "sign": "w",
+    "latitude": 38.7598459,
+    "longitude": -9.1126448
+  },
+  {
+    "Frequency": 13,
+    "user": 17040957,
+    "cell_id": 10611,
+    "sign": "w",
+    "latitude": 38.7664778,
+    "longitude": -9.1723957
+  },
+  {
+    "Frequency": 12,
+    "user": 17040957,
+    "cell_id": 2311,
+    "sign": "w",
+    "latitude": 38.7423539,
+    "longitude": -9.1454923
+  },
+  {
+    "Frequency": 12,
+    "user": 17040957,
+    "cell_id": 32921,
+    "sign": "w",
+    "latitude": 38.7681446,
+    "longitude": -9.0935151
+  },
+  {
+    "Frequency": 12,
+    "user": 17040957,
+    "cell_id": 1911,
+    "sign": "w",
+    "latitude": 38.7335798,
+    "longitude": -9.1499846
+  },
+  {
+    "Frequency": 12,
+    "user": 17040957,
+    "cell_id": 19121,
+    "sign": "w",
+    "latitude": 38.7605286,
+    "longitude": -9.0947943
+  },
+  {
+    "Frequency": 12,
+    "user": 17040957,
+    "cell_id": 6221,
+    "sign": "w",
+    "latitude": 38.7882932,
+    "longitude": -9.1853787
+  },
+  {
+    "Frequency": 12,
+    "user": 17040957,
+    "cell_id": 2521,
+    "sign": "w",
+    "latitude": 38.7403091,
+    "longitude": -9.2101086
+  },
+  {
+    "Frequency": 11,
+    "user": 17040957,
+    "cell_id": 51611,
+    "sign": "w",
+    "latitude": 38.7638279,
+    "longitude": -9.1388715
+  },
+  {
+    "Frequency": 11,
+    "user": 17040957,
+    "cell_id": 3911,
+    "sign": "w",
+    "latitude": 38.7509259,
+    "longitude": -9.1708047
+  },
+  {
+    "Frequency": 11,
+    "user": 17040957,
+    "cell_id": 2621,
+    "sign": "w",
+    "latitude": 38.7601773,
+    "longitude": -9.2351428
+  },
+  {
+    "Frequency": 11,
+    "user": 17040957,
+    "cell_id": 5711,
+    "sign": "w",
+    "latitude": 38.7524888,
+    "longitude": -9.140852
+  },
+  {
+    "Frequency": 10,
+    "user": 17040957,
+    "cell_id": 4011,
+    "sign": "h",
+    "latitude": 38.7622458,
+    "longitude": -9.1760457
+  },
+  {
+    "Frequency": 10,
+    "user": 17040957,
+    "cell_id": 2221,
+    "sign": "h",
+    "latitude": 38.7243408,
+    "longitude": -9.2196331
+  },
+  {
+    "Frequency": 10,
+    "user": 17040957,
+    "cell_id": 2111,
+    "sign": "w",
+    "latitude": 38.7395522,
+    "longitude": -9.1586269
+  },
+  {
+    "Frequency": 10,
+    "user": 17040957,
+    "cell_id": 4411,
+    "sign": "w",
+    "latitude": 38.76657,
+    "longitude": -9.1647068
+  },
+  {
+    "Frequency": 10,
+    "user": 17040957,
+    "cell_id": 8721,
+    "sign": "w",
+    "latitude": 38.7772138,
+    "longitude": -9.1102315
+  },
+  {
+    "Frequency": 10,
+    "user": 17040957,
+    "cell_id": 20111,
+    "sign": "w",
+    "latitude": 38.7728162,
+    "longitude": -9.1278492
+  },
+  {
+    "Frequency": 10,
+    "user": 17040957,
+    "cell_id": 3021,
+    "sign": "w",
+    "latitude": 38.7956465,
+    "longitude": -9.1476273
+  },
+  {
+    "Frequency": 9,
+    "user": 17040957,
+    "cell_id": 1221,
+    "sign": "h",
+    "latitude": 38.7612527,
+    "longitude": -9.1887617
+  },
+  {
+    "Frequency": 9,
+    "user": 17040957,
+    "cell_id": 1521,
+    "sign": "w",
+    "latitude": 38.760154,
+    "longitude": -9.2240935
+  },
+  {
+    "Frequency": 9,
+    "user": 17040957,
+    "cell_id": 11041,
+    "sign": "w",
+    "latitude": 38.770914,
+    "longitude": -9.266961
+  },
+  {
+    "Frequency": 9,
+    "user": 17040957,
+    "cell_id": 2011,
+    "sign": "w",
+    "latitude": 38.7357347,
+    "longitude": -9.1419121
+  },
+  {
+    "Frequency": 9,
+    "user": 17040957,
+    "cell_id": 5411,
+    "sign": "w",
+    "latitude": 38.7543183,
+    "longitude": -9.1480255
+  },
+  {
+    "Frequency": 9,
+    "user": 17040957,
+    "cell_id": 1711,
+    "sign": "w",
+    "latitude": 38.7298836,
+    "longitude": -9.1578807
+  },
+  {
+    "Frequency": 9,
+    "user": 17040957,
+    "cell_id": 3221,
+    "sign": "w",
+    "latitude": 38.7939353,
+    "longitude": -9.1049603
+  },
+  {
+    "Frequency": 8,
+    "user": 17040957,
+    "cell_id": 20211,
+    "sign": "h",
+    "latitude": 38.7564072,
+    "longitude": -9.1870571
+  },
+  {
+    "Frequency": 8,
+    "user": 17040957,
+    "cell_id": 2121,
+    "sign": "w",
+    "latitude": 38.7242168,
+    "longitude": -9.2369806
+  },
+  {
+    "Frequency": 8,
+    "user": 17040957,
+    "cell_id": 21821,
+    "sign": "w",
+    "latitude": 38.7965502,
+    "longitude": -9.3342957
+  },
+  {
+    "Frequency": 8,
+    "user": 17040957,
+    "cell_id": 6011,
+    "sign": "w",
+    "latitude": 38.7266103,
+    "longitude": -9.1594036
+  },
+  {
+    "Frequency": 8,
+    "user": 17040957,
+    "cell_id": 20311,
+    "sign": "w",
+    "latitude": 38.7254096,
+    "longitude": -9.160954
+  },
+  {
+    "Frequency": 8,
+    "user": 17040957,
+    "cell_id": 14221,
+    "sign": "w",
+    "latitude": 38.7656317,
+    "longitude": -9.2555344
+  },
+  {
+    "Frequency": 8,
+    "user": 17040957,
+    "cell_id": 12011,
+    "sign": "w",
+    "latitude": 38.7248798,
+    "longitude": -9.1527964
+  },
+  {
+    "Frequency": 8,
+    "user": 17040957,
+    "cell_id": 6721,
+    "sign": "w",
+    "latitude": 38.775692,
+    "longitude": -9.1755607
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 31211,
+    "sign": "h",
+    "latitude": 38.766683,
+    "longitude": -9.1738121
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 16121,
+    "sign": "w",
+    "latitude": 38.7432552,
+    "longitude": -9.2054454
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 34611,
+    "sign": "w",
+    "latitude": 38.7581575,
+    "longitude": -9.1913662
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 29641,
+    "sign": "w",
+    "latitude": 38.7850841,
+    "longitude": -9.3322848
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 3711,
+    "sign": "w",
+    "latitude": 38.7618965,
+    "longitude": -9.1805568
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 2341,
+    "sign": "w",
+    "latitude": 38.7881547,
+    "longitude": -9.232621
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 10711,
+    "sign": "w",
+    "latitude": 38.7613686,
+    "longitude": -9.1526325
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 1611,
+    "sign": "w",
+    "latitude": 38.7234317,
+    "longitude": -9.1703136
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 2611,
+    "sign": "w",
+    "latitude": 38.7432394,
+    "longitude": -9.1281186
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 3721,
+    "sign": "w",
+    "latitude": 38.7076032,
+    "longitude": -9.3846014
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 12911,
+    "sign": "w",
+    "latitude": 38.7506052,
+    "longitude": -9.1482825
+  },
+  {
+    "Frequency": 7,
+    "user": 17040957,
+    "cell_id": 7041,
+    "sign": "w",
+    "latitude": 38.775842,
+    "longitude": -9.3495102
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 21671,
+    "sign": "h",
+    "latitude": 38.8063591,
+    "longitude": -9.1562872
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 31611,
+    "sign": "w",
+    "latitude": 38.756406,
+    "longitude": -9.1870567
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 31521,
+    "sign": "w",
+    "latitude": 38.769657,
+    "longitude": -9.095428
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 2321,
+    "sign": "w",
+    "latitude": 38.7255397,
+    "longitude": -9.2045434
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 9921,
+    "sign": "w",
+    "latitude": 38.7691624,
+    "longitude": -9.3818237
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 5621,
+    "sign": "w",
+    "latitude": 38.7048213,
+    "longitude": -9.2862549
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 5511,
+    "sign": "w",
+    "latitude": 38.7566419,
+    "longitude": -9.1342769
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 11141,
+    "sign": "w",
+    "latitude": 38.7996485,
+    "longitude": -9.2351573
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 3311,
+    "sign": "w",
+    "latitude": 38.7509661,
+    "longitude": -9.185777
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 6211,
+    "sign": "w",
+    "latitude": 38.7185974,
+    "longitude": -9.1603866
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 10421,
+    "sign": "w",
+    "latitude": 38.7561223,
+    "longitude": -9.2564788
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 4211,
+    "sign": "w",
+    "latitude": 38.7701874,
+    "longitude": -9.1684103
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 14021,
+    "sign": "w",
+    "latitude": 38.7729649,
+    "longitude": -9.1236361
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 6421,
+    "sign": "w",
+    "latitude": 38.7927932,
+    "longitude": -9.1211947
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 2441,
+    "sign": "w",
+    "latitude": 38.819179,
+    "longitude": -9.1836157
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 2911,
+    "sign": "w",
+    "latitude": 38.7405634,
+    "longitude": -9.1638186
+  },
+  {
+    "Frequency": 6,
+    "user": 17040957,
+    "cell_id": 7711,
+    "sign": "w",
+    "latitude": 38.7052036,
+    "longitude": -9.1620473
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 11141,
+    "sign": "h",
+    "latitude": 38.7996485,
+    "longitude": -9.2351573
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 3411,
+    "sign": "h",
+    "latitude": 38.7587325,
+    "longitude": -9.186856
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 2721,
+    "sign": "h",
+    "latitude": 38.7746811,
+    "longitude": -9.1882215
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 7341,
+    "sign": "w",
+    "latitude": 38.7641742,
+    "longitude": -9.300028
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 15741,
+    "sign": "w",
+    "latitude": 38.9433384,
+    "longitude": -9.256148
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 3611,
+    "sign": "w",
+    "latitude": 38.7560015,
+    "longitude": -9.175501
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 30011,
+    "sign": "w",
+    "latitude": 38.734668,
+    "longitude": -9.1517128
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 12121,
+    "sign": "w",
+    "latitude": 38.783353,
+    "longitude": -9.2272747
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 6111,
+    "sign": "w",
+    "latitude": 38.7203559,
+    "longitude": -9.1659926
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 10961,
+    "sign": "w",
+    "latitude": 38.7392163,
+    "longitude": -9.1467056
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 13921,
+    "sign": "w",
+    "latitude": 38.7728984,
+    "longitude": -9.0987707
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 1511,
+    "sign": "w",
+    "latitude": 38.7188192,
+    "longitude": -9.1693019
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 4321,
+    "sign": "w",
+    "latitude": 38.7085647,
+    "longitude": -9.3027743
+  },
+  {
+    "Frequency": 5,
+    "user": 17040957,
+    "cell_id": 9611,
+    "sign": "w",
+    "latitude": 38.722254,
+    "longitude": -9.148385
+  }
+]

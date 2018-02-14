@@ -34,12 +34,13 @@
                     <a class="nav-link" href="#" id="clear">CLEAR</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#" id="SCP">SCOPE</a>
                 </li>
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <form class="form-inline mt-2 mt-md-0" id="users">
+                <select class="form-control mr-sm-2">
+                    <option value="Vancouver, BC">Vancouver, BC</option>
+                </select>
             </form>
         </div>
     </nav>
@@ -79,34 +80,60 @@
         //เอามาจาก google เป็นรูปแบบมหมุดที่ปัก
         var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 
-
-
-        
-
         // calculateAndDisplayRoute(directionsService, directionsDisplay);
         document.getElementById('mode').addEventListener('click', function() {
             directionsDisplay.setMap(map);
-            var wayp = [
-                [38.7335798, -9.1499846],
-                [38.7324734, -9.1484176],
-                [38.7326571, -9.1456222],
-                [38.7298836, -9.1578807],
-                [38.7254096, -9.160954]
-            ];
-            calculateAndDisplayRoute(directionsService, directionsDisplay, wayp);
+            calculateAndDisplayRoute(directionsService, directionsDisplay);
         });
         document.getElementById('clear').addEventListener('click', function() {
             directionsDisplay.setMap(null);
+        });
+        document.getElementById('SCP').addEventListener('click', function() {
+            loadJSON('user.json', function(response) {
+                var actual_JSON = JSON.parse(response);
+
+                var lo = [];
+                var si = [];
+                var col = [];
+                actual_JSON.forEach(item => {
+                    var position = { "lat": item.latitude, "lng": item.longitude };
+                    lo.push(position);
+                    si.push(item.Frequency);
+                    var c = '';
+                    if(item.sign == 'h')
+                    {
+                        c = 'BLUE';
+                    }
+                    else
+                    {
+                        c = 'RED';
+                    }
+                    col.push(c);
+                });
+                console.log(lo);
+                for (var city in lo) {
+                    var cityCircle = new google.maps.Circle({
+                        strokeColor: col[city],
+                        strokeOpacity: 0.8,
+                        strokeWeight: 2,
+                        fillColor: col[city],
+                        fillOpacity: 0.1,
+                        map: map,
+                        center: lo[city],
+                        radius: Math.sqrt(si[city])*50
+                    });
+                }
+            });
         });
 
     }
 
     // function โหลดไฟล์ JSON
-    function loadJSON(callback) {
+    function loadJSON(filename, callback) {
 
         var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
-        xobj.open('GET', 'cell_lisboa.json', true); // Replace 'my_data' with the path to your file
+        xobj.open('GET', filename, true); // Replace 'my_data' with the path to your file
         xobj.onreadystatechange = function() {
             if (xobj.readyState == 4 && xobj.status == "200") {
                 // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -118,7 +145,7 @@
 
     function init() {
         //โหลดไฟล์ JSON โดยใช้ function ชื่อ loadJSON
-        loadJSON(function(response) {
+        loadJSON('cell_lisboa.json', function(response) {
             // Parse JSON string into object
             var actual_JSON = JSON.parse(response);
 
@@ -128,7 +155,7 @@
             //เรียกใช้ function ชื่อ getLocation
             getLocation();
 
-            calculateAndDisplayRoute();
+
         });
 
     }
@@ -140,41 +167,41 @@
         //วนข้อมูลในไฟล์ JSON ที่เก็บอยู่ในตัวแปร items
         items.forEach(item => {
             //ทดสอบให้โชวค่าไใน JSON ออกมาใน Console
-            // console.log(item.latitude, item.longitude, item.cell_id_unique);
 
             var loc = { "lat": item.latitude, "lng": item.longitude };
             locations.push(loc);
 
 
-            var lab = item.latitude + ',' + item.longitude;
+            var lab = item.cell_id_unique;
             var labelch = lab.toString();
             labels.push(labelch);
-
-
         });
 
     }
     //ส้รางตัวแปรไว้เก็บค่า location
     var locations = [];
 
-    function calculateAndDisplayRoute(directionsService, directionsDisplay, vr) {
+    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         //waypoins กำหนดจุดที่ผ่าน
+        var waypts = [];
+        var parray = [
+            [38.76911, -9.1779044],
+            [38.7312911, -9.1425821]
+        ];
+        for (var i = 0; i < parray.length; i++) {
+            waypts.push({
+                location: new google.maps.LatLng(parray[i][0], parray[i][1]),
+                stopover: true
+            });
+        }
 
         // console.log(wayp[0]);
-        var a = new google.maps.LatLng(vr[0][0], vr[0][1]); //1911
-        var b = new google.maps.LatLng(vr[1][0], vr[1][1]); //32911
-        var c = new google.maps.LatLng(vr[2][0], vr[2][1]); //10661
-        var d = new google.maps.LatLng(vr[3][0], vr[3][1]); //10661
-        var e = new google.maps.LatLng(vr[4][0], vr[4][1]); //10661
-        var f = new google.maps.LatLng(38.7203559, -9.1659926); //10661
-        var g = new google.maps.LatLng(38.7188192, -9.1693019); //10661
-        var h = new google.maps.LatLng(38.7111649, -9.1775882); //10661
 
         //var selectedMode = document.getElementById('mode').value;
         directionsService.route({
-                origin: { lat: 38.734668, lng: -9.1517128 }, //จุดเริ่ม บ้าน เสา 30011
-                destination: { lat: 38.7312911, lng: -9.1425821 }, //จุดจบที่ทำงาน ห้าง เสา5811
-                waypoints: [{ location: a }, { location: b }, { location: c }, { location: d }, { location: f }, { location: g }, { location: h }], //{location: second}
+                origin: { lat: 38.76911, lng: -9.1779044 }, //จุดเริ่ม บ้าน เสา 30011
+                destination: { lat: 38.7696936, lng: -9.2306847 }, //จุดจบที่ทำงาน ห้าง เสา5811
+                waypoints: waypts, //{location: second}
                 travelMode: 'DRIVING',
                 optimizeWaypoints: true
             },
